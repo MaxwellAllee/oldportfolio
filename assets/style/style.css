@@ -214,8 +214,6 @@ input[type=submit]{
         width: 100%
     }
     section{
-         /*margin-left: 5%;
-         margin-right: 5%;*/
          max-width: 530px;
     }
     .greenbox{
@@ -239,9 +237,6 @@ input[type=submit]{
         height: 95%;
         margin: 10px;
         }
-    .photoalt{
-       content: url("https://via.placeholder.com/450x350");
-    }
     .photo{
         margin: 10px;
     }
@@ -251,8 +246,22 @@ input[type=submit]{
     .hangman{
         width: 450px;
         height: 350px;
-        content: url("../images/hangman.jpg")
     }
     
 }
 
+@media only screen and (max-width: 550px) {
+    .photoalt{
+        content: url("https://via.placeholder.com/200x100");
+     }
+     .photoTxt{
+        width: 200px;
+    }
+    .hangman{
+        width: 200px;
+        height: 100px;
+    }
+    section{
+        max-width: 275px;
+   }
+}
